@@ -1,0 +1,27 @@
+*~
+bin/
+obj/
+*.suo
+*.cachefile
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# OSX
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Files that might appear on external disk
+.Spotlight-V100
+.Trashes
+
+# Thumbnails
+._*
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/

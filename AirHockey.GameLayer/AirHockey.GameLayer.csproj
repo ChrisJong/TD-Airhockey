@@ -1,0 +1,254 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A2491B01-11B9-443E-A087-5CE125D0D9A0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AirHockey.GameLayer</RootNamespace>
+    <AssemblyName>AirHockey.GameLayer</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\AirHockey.GameLayer.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>..\bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\AirHockey.GameLayer.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RunPostBuildEvent>Always</RunPostBuildEvent>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ComponentModel\Audio\AmbienceAudioComponent.cs" />
+    <Compile Include="ComponentModel\Audio\AudioComponent.cs" />
+    <Compile Include="ComponentModel\Audio\NilAudioComponent.cs" />
+    <Compile Include="ComponentModel\Audio\OneShotAudioComponent.cs" />
+    <Compile Include="ComponentModel\ComponentBase.cs" />
+    <Compile Include="ComponentModel\DataTransfer\MessageDataMemberAttribute.cs" />
+    <Compile Include="ComponentModel\GameObjectBase.cs" />
+    <Compile Include="ComponentModel\Graphics\BackgroundGraphicsComponent.cs" />
+    <Compile Include="ComponentModel\Graphics\CircleGraphicsComponent.cs" />
+    <Compile Include="ComponentModel\Graphics\AnimationGraphicsComponent.cs" />
+    <Compile Include="ComponentModel\Graphics\DialogBackgroundGraphicsComponent.cs" />
+    <Compile Include="ComponentModel\Graphics\ImageGraphicsComponent.cs" />
+    <Compile Include="ComponentModel\Graphics\GraphicsComponent.cs" />
+    <Compile Include="ComponentModel\Graphics\NilGraphicsComponent.cs" />
+    <Compile Include="ComponentModel\GUI\NilUserInterfaceComponent.cs" />
+    <Compile Include="ComponentModel\GUI\UserInterfaceComponent.cs" />
+    <Compile Include="ComponentModel\IMessageHandler.cs" />
+    <Compile Include="ComponentModel\Input\InputComponent.cs" />
+    <Compile Include="ComponentModel\Input\NilInputComponent.cs" />
+    <Compile Include="ComponentModel\Input\TagInputComponent.cs" />
+    <Compile Include="ComponentModel\MessageResult.cs" />
+    <Compile Include="ComponentModel\MessageSystemHelper.cs" />
+    <Compile Include="GUI\KeyboardButtonControl.cs" />
+    <Compile Include="Views\AboutViewThree.cs" />
+    <Compile Include="Views\AboutViewFour.cs" />
+    <Compile Include="Views\ArmouryViewContent\ArmouryTextBackgroundGraphicsComponent.cs" />
+    <Compile Include="Views\ArmouryViewContent\ArmouryUserInterfaceComponent.cs" />
+    <Compile Include="Views\ArmouryViewContent\ArmouryUserInterfaceGameObject.cs" />
+    <Compile Include="Views\ArmouryViewOne.cs" />
+    <Compile Include="Views\ArmouryViewThree.cs" />
+    <Compile Include="Views\ArmouryViewTwo.cs" />
+    <Compile Include="Views\GameSummaryViewContent\Keyboard\KeyboardManager.cs" />
+    <Compile Include="Views\GameSummaryViewContent\Keyboard\KeyboardUserInterfaceComponent.cs" />
+    <Compile Include="Views\HighscoreView.cs" />
+    <Compile Include="Views\HighscoreViewContent\HighscoreUserInterfaceComponent.cs" />
+    <Compile Include="Views\HighscoreViewContent\HighscoreUserInterfaceGameObject.cs" />
+    <Compile Include="Views\AboutViewTwo.cs" />
+    <Compile Include="Views\LoadingScreenView.cs" />
+    <Compile Include="Views\LoadingScreenViewContent\LoadingScreenUserInterfaceComponent.cs" />
+    <Compile Include="Views\LoadingScreenViewContent\LoadingScreenUserInterfaceGameObject.cs" />
+    <Compile Include="Views\StandardGameViewContent\Core\DamageIndicator.cs" />
+    <Compile Include="Views\StandardGameViewContent\Core\DamageIndicatorGraphicsComponent.cs" />
+    <Compile Include="Views\StandardGameViewContent\Core\CoreBaseGraphicsComponent.cs" />
+    <Compile Include="Views\StandardGameViewContent\Core\PlayerScoreTrackerGraphicsComponent.cs" />
+    <Compile Include="Views\StandardGameViewContent\Core\CoreExplodeGraphicsComponent.cs" />
+    <Compile Include="Views\StandardGameViewContent\Core\CoreManager.cs" />
+    <Compile Include="Views\StandardGameViewContent\ExitButton\Exitbutton.cs" />
+    <Compile Include="Views\StandardGameViewContent\ExitButton\ExitButtonGraphicsComponent.cs" />
+    <Compile Include="Views\StandardGameViewContent\ExitButton\ExitButtonInputComponent.cs" />
+    <Compile Include="Views\StandardGameViewContent\ExitButton\ExitButtonManager.cs" />
+    <Compile Include="Views\StandardGameViewContent\ExitButton\ExitButtonPhysicsComponent.cs" />
+    <Compile Include="Views\StandardGameViewContent\Particle\OneShotFlashTransition.cs" />
+    <Compile Include="Views\StandardGameViewContent\Particle\CoreDamagedEffect.cs" />
+    <Compile Include="Views\StandardGameViewContent\Core\CoreExplodeEffect.cs" />
+    <Compile Include="Views\StandardGameViewContent\Particle\PuckExplodeEffect.cs" />
+    <Compile Include="Views\StandardGameViewContent\Particle\CoreRegenEffect.cs" />
+    <Compile Include="Views\StandardGameViewContent\Particle\PuckCreateEffect.cs" />
+    <Compile Include="Views\StandardGameViewContent\Particle\PuckDissolveEffect.cs" />
+    <Compile Include="Views\StandardGameViewContent\Particle\SimpleParticleBase.cs" />
+    <Compile Include="Views\StandardGameViewContent\Puck\PuckGraphicsComponent.cs" />
+    <Compile Include="Views\StandardGameViewContent\RechargeStation\RechargeStationGraphicsComponent.cs" />
+    <Compile Include="Views\StandardGameViewContent\Towers\CommonGraphics\OneShotAuraGraphicsComponent.cs" />
+    <Compile Include="Views\StandardGameViewContent\Towers\CommonGraphics\RadialForceGraphicsComponent.cs" />
+    <Compile Include="Views\StandardGameViewContent\Towers\CommonGraphics\LinearProjectileGraphicsComponent.cs" />
+    <Compile Include="Views\StandardGameViewContent\Towers\CommonGraphics\ToggleTowerBaseGraphicsComponent.cs" />
+    <Compile Include="Views\StandardGameViewContent\Towers\CommonGraphics\SimpleTowerBaseGraphicsComponent.cs" />
+    <Compile Include="Views\StandardGameViewContent\Towers\CommonInput\RadialToggleInputComponent.cs" />
+    <Compile Include="Views\StandardGameViewContent\Towers\CommonInput\TowerPullbackInputComponent.cs" />
+    <Compile Include="Views\StandardGameViewContent\Towers\CommonPhysics\MotionAuraPhysicsComponent.cs" />
+    <Compile Include="Views\StandardGameViewContent\Towers\CommonPhysics\LinearProjectilePhysicsComponent.cs" />
+    <Compile Include="Views\StandardGameViewContent\Towers\CommonGraphics\TowerEnergyAnimationComponent.cs" />
+    <Compile Include="Views\StandardGameViewContent\Towers\CommonPhysics\RadialForcePhysicsComponent.cs" />
+    <Compile Include="Views\StandardGameViewContent\Towers\RadialForceProjectileBase.cs" />
+    <Compile Include="Views\StandardGameViewContent\Towers\Slow\SlowTower.cs" />
+    <Compile Include="Views\StandardGameViewContent\Towers\Slow\SlowTowerInputComponent.cs" />
+    <Compile Include="Views\StandardGameViewContent\Towers\Slow\SlowTowerProjectile.cs" />
+    <Compile Include="Views\StandardGameViewContent\Towers\Stasis\StasisTowerProjectile.cs" />
+    <Compile Include="Views\StandardGameViewContent\Towers\Stasis\StasisTowerInputComponent.cs" />
+    <Compile Include="Views\StandardGameViewContent\Towers\Stasis\StasisTower.cs" />
+    <Compile Include="Views\StandardGameViewContent\Towers\TowerObjectBase.cs" />
+    <Compile Include="GUI\ToggleButtonControl.cs" />
+    <Compile Include="Views\AboutViewOne.cs" />
+    <Compile Include="Views\AboutViewContent\AboutTextBackgroundGraphicsComponent.cs" />
+    <Compile Include="Views\AboutViewContent\AboutUserInterfaceComponent.cs" />
+    <Compile Include="Views\AboutViewContent\AboutUserInterfaceGameObject.cs" />
+    <Compile Include="Views\CreditsView.cs" />
+    <Compile Include="Views\Core\Transitions\CreditsTextBackgroundGraphicsComponent.cs" />
+    <Compile Include="Views\CreditsViewContent\CreditsUserInterfaceComponent.cs" />
+    <Compile Include="Views\CreditsViewContent\CreditsUserInterfaceGameObject.cs" />
+    <Compile Include="Views\GameSummaryView.cs" />
+    <Compile Include="Views\CreditsViewContent\GameDataHelper.cs" />
+    <Compile Include="Views\GameSummaryViewContent\GameSummaryData.cs" />
+    <Compile Include="Views\GameSummaryViewContent\GameSummaryUserInterfaceComponent.cs" />
+    <Compile Include="Views\GameSummaryViewContent\GameSummaryUserInterfaceGameObject.cs" />
+    <Compile Include="Views\MainMenuView.cs" />
+    <Compile Include="Views\MainMenuViewContent\MainMenuUserInterfaceComponent.cs" />
+    <Compile Include="Views\MainMenuViewContent\MainMenuUserInterfaceGameObject.cs" />
+    <Compile Include="Views\StandardGameViewContent\RechargeStation\RechargeStation.cs" />
+    <Compile Include="Views\StandardGameViewContent\RechargeStation\RechargeStationPhysicsComponent.cs" />
+    <Compile Include="Views\StandardGameViewContent\Towers\Blackhole\BlackholeTower.cs" />
+    <Compile Include="Views\StandardGameViewContent\Towers\Blackhole\BlackholeTowerInputComponent.cs" />
+    <Compile Include="Views\StandardGameViewContent\Towers\Blackhole\BlackholeTowerProjectile.cs" />
+    <Compile Include="Views\StandardGameViewContent\Core\CoreBase.cs" />
+    <Compile Include="Views\StandardGameViewContent\Core\CoreBasePhysicsComponent.cs" />
+    <Compile Include="Views\StandardGameViewContent\Towers\Forcefield\ForcefieldTower.cs" />
+    <Compile Include="Views\StandardGameViewContent\Towers\Forcefield\ForcefieldTowerInputComponent.cs" />
+    <Compile Include="Views\StandardGameViewContent\Towers\Forcefield\ForcefieldTowerProjectile.cs" />
+    <Compile Include="Views\StandardGameViewContent\Puck\PuckGenerator.cs" />
+    <Compile Include="Views\StandardGameViewContent\Puck\Puck.cs" />
+    <Compile Include="Views\StandardGameViewContent\Puck\PuckPhysicsComponent.cs" />
+    <Compile Include="Views\StandardGameViewContent\Towers\Pulsar\PulsarTower.cs" />
+    <Compile Include="Views\StandardGameViewContent\Towers\Pulsar\PulsarTowerInputComponent.cs" />
+    <Compile Include="Views\StandardGameViewContent\Towers\Pulsar\PulsarTowerProjectile.cs" />
+    <Compile Include="ComponentModel\Physics\NilPhysicsComponent.cs" />
+    <Compile Include="ComponentModel\Physics\PhysicsComponent.cs" />
+    <Compile Include="Core\GameMain.cs" />
+    <Compile Include="GUI\ButtonControl.cs" />
+    <Compile Include="GUI\Events\ButtonClickEventArgs.cs" />
+    <Compile Include="GUI\GUIControl.cs" />
+    <Compile Include="GUI\LabelledButtonControl.cs" />
+    <Compile Include="GUI\TextControl.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources\GameResource.cs" />
+    <Compile Include="Resources\GameResourceType.cs" />
+    <Compile Include="Resources\IResourceContext.cs" />
+    <Compile Include="Resources\ResourceHelper.cs" />
+    <Compile Include="Resources\ResourceName.cs" />
+    <Compile Include="Translators\ResourceTranslator.cs" />
+    <Compile Include="Views\Core\Base\GameDialogViewBase.cs" />
+    <Compile Include="Views\Core\Base\GameObjectContainerBase.cs" />
+    <Compile Include="Views\Core\Base\GameViewBase.cs" />
+    <Compile Include="Views\Core\Transitions\TransitionParameterType.cs" />
+    <Compile Include="Views\Core\Transitions\ViewTransition.cs" />
+    <Compile Include="Views\Core\Transitions\ViewTransitionParameter.cs" />
+    <Compile Include="Views\Core\Transitions\ViewTransitionPriority.cs" />
+    <Compile Include="Views\StandardGameViewContent\Towers\Slingshot\SlingshotTower.cs" />
+    <Compile Include="Views\StandardGameViewContent\Towers\Slingshot\SlingshotTowerProjectile.cs" />
+    <Compile Include="Views\StandardGameViewContent\Towers\Slingshot\SlingshotTowerInputComponent.cs" />
+    <Compile Include="Views\StandardGameView.cs" />
+    <Compile Include="Views\StandardGameViewContent\Particle\LinearProjectileTrail.cs" />
+    <Compile Include="Views\StandardGameViewContent\Towers\CommonGraphics\OneShotGraphicsComponent.cs" />
+    <Compile Include="Views\StandardGameViewContent\Towers\CommonPhysics\SimplePhysicsComponent.cs" />
+    <Compile Include="Views\StandardGameViewContent\TestingGameObject.cs" />
+    <Compile Include="Views\StandardGameViewContent\TestingUserInterfaceComponent.cs" />
+    <Compile Include="Views\StandardGameViewContent\Towers\CommonPhysics\TowerPhysicsComponent.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\AirHockey.Constants\AirHockey.Constants.csproj">
+      <Project>{76EC4A38-A403-4D7D-9553-D3FCE9801DCE}</Project>
+      <Name>AirHockey.Constants</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AirHockey.InteractionLayer\AirHockey.InteractionLayer\AirHockey.InteractionLayer.csproj">
+      <Project>{6097C9F8-DD7C-4781-A16F-CA42A104857D}</Project>
+      <Name>AirHockey.InteractionLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AirHockey.LogicLayer\AirHockey.LogicLayer.csproj">
+      <Project>{C56151C0-083D-406D-ACF6-9BB9AD4055B5}</Project>
+      <Name>AirHockey.LogicLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AirHockey.Utility\AirHockey.Utility.csproj">
+      <Project>{D5D1F1E1-DC25-4B9A-B502-7521299BDA2B}</Project>
+      <Name>AirHockey.Utility</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>echo f | XCOPY "$(SolutionDir)Resources" "$(TargetDir)Resources" /E /I /Y /D</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
